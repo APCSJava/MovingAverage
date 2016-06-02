@@ -1,8 +1,7 @@
 package movingaverage;
 
 /***
- * An abstract class to serve as parent for concrete classes that provide a
- * moving average of values.
+ * Maintains a moving average of values
  * 
  * @version 1 June, 2016
  *
@@ -23,10 +22,10 @@ public abstract class MovingAverage {
 		lastN = new double[n];
 	}
 
-	// Concrete classes must specify an implementation
+	// This class leaves the implementation to future subclasses
 	public abstract double getAverage();
 
-	// Concrete classes must specify an implementation
+	// This class leaves the implementation to future subclasses
 	public abstract void addValue(double d);
 
 	// Provide access to the values
